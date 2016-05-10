@@ -1,5 +1,9 @@
 ;;; -*- coding: utf-8 -*-
-(("/Users/"
+(("/Users/Rika/.emacs.d/"
+  (dired-filename . "/Users/Rika/.emacs.d/init.el"))
+ ("/Users/Rika/.emacs.d/init.el" . 5953)
+ ("/Users/Rika/.emacs.d/.recentf" . 569)
+ ("/Users/"
   (dired-filename . "/Users/Rika"))
  ("/Users/Rika/Documents/sandbox/"
   (dired-filename . "/Users/Rika/Documents/sandbox/workspace"))
@@ -16,9 +20,6 @@
   (dired-filename . "/Users/Rika/Documents/.parallels-vm-directory"))
  ("/Users/Rika/"
   (dired-filename . "/Users/Rika/.emacs.d"))
- ("/Users/Rika/.emacs.d/"
-  (dired-filename . "/Users/Rika/.emacs.d/init.el"))
- ("/Users/Rika/.emacs.d/init.el" . 6164)
  ("/Users/Rika/.emacs.d/savefile/recentf" . 569)
  ("/Users/Rika/Documents/.emacs.d copy.zip" . 509)
  ("/Users/Rika/Documents/RDC Connections/"

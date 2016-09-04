@@ -133,4 +133,18 @@ by Prelude.")
  (run-at-time 5 nil 'prelude-tip-of-the-day))
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (add-to-list 'load-path "~/.emacs.d/solarized")
+(load-theme 'solarized-dark t)
+(setenv "GOPATH" "/Users/Rika/Documents/sandbox/workspace/go")
+(setenv "GOBIN" "/Users/Rika/Documents/sandbox/workspace/go/bin")
+
+(defun set-exec-path-from-shell-PATH ()
+  (let ((path-from-shell (replace-regexp-in-string
+                          "[ \t\n]*$"
+                          ""
+                          (shell-command-to-string "$SHELL --login -i -c 'echo $PATH'"))))
+    (setenv "PATH" path-from-shell)
+    (setq eshell-path-env path-from-shell) ; for eshell users
+    (setq exec-path (split-string path-from-shell path-separator))))
+
+(when window-system (set-exec-path-from-shell-PATH))
 ;;; init.el ends here
